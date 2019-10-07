@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World from my Index.EJs!!!</h1>
+
+    <form action="/survey" method="POST">
+        Name: <input type="text" name="name">
+        Email: <input type="text" name="email">
+        <input type="submit" value="Submit!">
+    </form>
+
+    <% for(let survey of surveys) { %>
+
+        <p>Name: <%= survey.name %> </p>
+        <p>Email: <%= survey.email %> </p>
+
+    <% } %>
+</body>
+</html>
